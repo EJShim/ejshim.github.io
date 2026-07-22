@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eungjune Shim — Machine Learning Engineer</title>
+<meta name="description" content="Eungjune Shim — machine learning engineer at CLO Virtual Fashion. Deep learning for 3D: generative models (DiffGI, ECCV 2026), 3D Gaussian splatting, and geometric deep learning for medical & dental scans.">
+<link rel="canonical" href="https://ejshim.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Eungjune Shim — Machine Learning Engineer">
+<meta property="og:description" content="Deep learning for 3D: generative models, Gaussian splatting, on-device inference. CLO Virtual Fashion, Seoul.">
+<meta property="og:url" content="https://ejshim.github.io/">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eungjune Shim",
+  "alternateName": "EJ Shim",
+  "jobTitle": "Machine Learning Engineer",
+  "worksFor": { "@type": "Organization", "name": "CLO Virtual Fashion Inc." },
+  "email": "mailto:e.june.shim@gmail.com",
+  "url": "https://ejshim.github.io/",
+  "sameAs": [
+    "https://github.com/EJShim",
+    "https://scholar.google.com/citations?user=Txn7APwAAAAJ",
+    "https://www.linkedin.com/in/eungjune-shim-542a6a153/",
+    "https://x.com/ej__shim",
+    "https://www.youtube.com/@ej_shim"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#research">Skip to content</a>
+
+<header class="masthead">
+  <a class="wordmark" href="./">EJShim</a>
+  <nav class="mast-nav" aria-label="Sections">
+    <a href="#research">research</a>
+    <a href="#publications">publications</a>
+    <a href="#code">code</a>
+    <a href="#cv">cv</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Machine Learning Engineer · CLO Virtual Fashion · Seoul</p>
+    <h1>Eungjune Shim</h1>
+    <p class="thesis">I build deep-learning systems for 3D — generative models for shapes and
+    thin shells, 3D Gaussian splatting, and geometric deep learning on meshes and scans.
+    I like research that ships, so most of mine runs live in the&nbsp;browser.</p>
+    <ul class="channels">
+      <li><a href="https://github.com/EJShim">GitHub</a></li>
+      <li><a href="https://scholar.google.com/citations?user=Txn7APwAAAAJ">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/eungjune-shim-542a6a153/">LinkedIn</a></li>
+      <li><a href="https://x.com/ej__shim">X</a></li>
+      <li><a href="https://www.youtube.com/@ej_shim">YouTube</a></li>
+      <li><a href="mailto:e.june.shim@gmail.com">e.june.shim@gmail.com</a></li>
+    </ul>
+  </div>
+  <figure class="cloth-fig">
+    <div class="cloth-panel"><canvas id="cloth" aria-label="Interactive cloth simulation — drag to disturb the fabric"></canvas></div>
+    <figcaption><span class="figno">fig. 1</span> a real-time cloth simulation — mass–spring grid, Verlet integration, computed live on your device — <em class="hint">drag it</em></figcaption>
+  </figure>
+</section>
+
+<main>
+
+<section id="research">
+  <header class="sec-head"><h2>Research</h2></header>
+  <div class="prose">
+    <p>At <a href="https://www.clo3d.com">CLO Virtual Fashion</a> I work on deep learning for 3D
+    garments. My latest project, <a href="https://ejshim.github.io/diffgi/">DiffGI</a> (ECCV 2026),
+    is a differentiable geometry-image framework that turns a single image into simulation-ready
+    thin-shell 3D. Along the way we also made garment simulation learnable, estimating physical
+    fabric parameters from drape tests and tag information (Eurographics 2024, CAVW 2024).</p>
+    <p>Before fashion I worked on medical AI: deep-learning pipelines for CT analysis at KIST —
+    automated cephalometry, rotator-cuff tear classification, mandible &amp; maxilla segmentation —
+    then led the AI team at Imagoworks, where our tooth-segmentation and crown-generation work
+    for 3D dental scans shipped to digital dentistry and became granted US patents.</p>
+    <p>These days I care most about 3D generative models, 3D Gaussian splatting, and edge-device
+    inference. The browser is my favorite research medium — WebGL, WebAssembly, neural nets
+    running on-device — like the piece of cloth hanging at the top of this page.</p>
+  </div>
+  <ul class="news">
+    <li><span class="date">2026.07</span><span>DiffGI is out — <a href="https://arxiv.org/abs/2607.13365">arXiv preprint</a> and <a href="https://ejshim.github.io/diffgi/">project page</a>. Accepted to ECCV 2026.</span></li>
+    <li><span class="date">2025–26</span><span>Three US patents granted for deep-learning segmentation of dental scans and maxillofacial CT.</span></li>
+    <li><span class="date">2024.04</span><span>Cloth-parameter estimation from Cusick drape tests, published in the Eurographics 2024 issue of Computer Graphics Forum.</span></li>
+  </ul>
+</section>
+
+<section id="publications">
+  <header class="sec-head"><h2>Selected publications</h2></header>
+  <ol class="pubs">
+    <li class="pub">
+      <span class="pub-year">2026</span>
+      <div>
+        <h3 class="pub-title"><a href="https://arxiv.org/abs/2607.13365">DiffGI: Differentiable Geometry Images for High-Fidelity Thin-Shell 3D Generation</a></h3>
+        <p class="pub-authors"><strong>E. Shim</strong>, H. Lee, E. Ju</p>
+        <p class="pub-meta"><span class="venue">ECCV 2026</span> <a class="plink" href="https://arxiv.org/abs/2607.13365">arXiv</a> <a class="plink" href="https://ejshim.github.io/diffgi/">project</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2024</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1111/cgf.15027">Estimating Cloth Simulation Parameters from Tag Information and Cusick Drape Test</a></h3>
+        <p class="pub-authors">E. Ju, K. Kim, S. Yoon, <strong>E. Shim</strong>, G. C. Kang, P. S. Chang, M. G. Choi</p>
+        <p class="pub-meta"><span class="venue">Computer Graphics Forum 43(2) · Eurographics 2024</span> <a class="plink" href="https://doi.org/10.1111/cgf.15027">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2024</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1002/cav.2265">Fast Constrained Optimization for Cloth Simulation Parameters from Static Drapes</a></h3>
+        <p class="pub-authors">E. Ju, <strong>E. Shim</strong>, K. Kim, S. Yoon, M. G. Choi</p>
+        <p class="pub-meta"><span class="venue">Computer Animation and Virtual Worlds 35(3)</span> <a class="plink" href="https://doi.org/10.1002/cav.2265">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2023</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.15701/kcgs.2023.29.3.117">Drape Simulation Estimation for Non-Linear Stiffness Model</a></h3>
+        <p class="pub-authors"><strong>E. Shim</strong>, E. Ju, M. G. Choi</p>
+        <p class="pub-meta"><span class="venue">Journal of the Korea Computer Graphics Society 29(3)</span> <a class="plink" href="https://doi.org/10.15701/kcgs.2023.29.3.117">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2022</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.3390/app12031358">Deep Learning-Based Automatic Segmentation of Mandible and Maxilla in Multi-Center CT Images</a></h3>
+        <p class="pub-authors">S. Park, H. Kim, <strong>E. Shim</strong>, B. Y. Hwang, Y. Kim, J. W. Lee, H. Seo</p>
+        <p class="pub-meta"><span class="venue">Applied Sciences 12(3)</span> <a class="plink" href="https://doi.org/10.3390/app12031358">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2020</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1016/j.cmpb.2020.105513">Web-Based Fully Automated Cephalometric Analysis by Deep Learning</a></h3>
+        <p class="pub-authors">H. Kim, <strong>E. Shim</strong>, J. Park, Y.-J. Kim, U. Lee, Y. Kim</p>
+        <p class="pub-meta"><span class="venue">Computer Methods and Programs in Biomedicine 194</span> <a class="plink" href="https://doi.org/10.1016/j.cmpb.2020.105513">doi</a> <span class="cites">200+ citations</span></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2020</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1038/s41598-020-72357-0">Automated Rotator Cuff Tear Classification Using 3D Convolutional Neural Network</a></h3>
+        <p class="pub-authors"><strong>E. Shim</strong>, J. Y. Kim, J. P. Yoon, S.-Y. Ki, T. Lho, Y. Kim, S. W. Chung</p>
+        <p class="pub-meta"><span class="venue">Scientific Reports 10</span> <a class="plink" href="https://doi.org/10.1038/s41598-020-72357-0">doi</a> <span class="cites">70+ citations</span></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2019</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1080/21681163.2019.1608308">Automated Maxillofacial Reconstruction Software: Development and Evaluation</a></h3>
+        <p class="pub-authors">H. Kim, T. G. Son, H. Cho, <strong>E. Shim</strong>, B. Y. Hwang, J. W. Lee, Y. Kim</p>
+        <p class="pub-meta"><span class="venue">Computer Methods in Biomechanics and Biomedical Engineering: Imaging &amp; Visualization</span> <a class="plink" href="https://doi.org/10.1080/21681163.2019.1608308">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2018</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1007/s11766-018-3459-2">2D–3D Registration for 3D Analysis of Lower Limb Alignment in a Weight-Bearing Condition</a></h3>
+        <p class="pub-authors"><strong>E. Shim</strong>, Y. Kim, D. Lee, B. H. Lee, S. Woo, K. Lee</p>
+        <p class="pub-meta"><span class="venue">Applied Mathematics — A Journal of Chinese Universities 33(1)</span> <a class="plink" href="https://doi.org/10.1007/s11766-018-3459-2">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2017</span>
+      <div>
+        <h3 class="pub-title"><a href="https://doi.org/10.1177/0363546517706699">Serial Changes in 3-Dimensional Supraspinatus Muscle Volume After Rotator Cuff Repair</a></h3>
+        <p class="pub-authors">S. W. Chung, K.-S. Oh, S. G. Moon, N. R. Kim, J. W. Lee, <strong>E. Shim</strong>, S. Park, Y. Kim</p>
+        <p class="pub-meta"><span class="venue">The American Journal of Sports Medicine 45(10)</span> <a class="plink" href="https://doi.org/10.1177/0363546517706699">doi</a></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2017</span>
+      <div>
+        <h3 class="pub-title">Virtual Reality and 3D Printing for Craniopagus Surgery</h3>
+        <p class="pub-authors">G. Kim, <strong>E. Shim</strong>, H. Mohammed, Y. Kim, Y. O. Kim</p>
+        <p class="pub-meta"><span class="venue">Journal of International Society for Simulation Surgery 4(1)</span></p>
+      </div>
+    </li>
+    <li class="pub">
+      <span class="pub-year">2016</span>
+      <div>
+        <h3 class="pub-title">Virtual Surgical Planning System for Mandible Reconstruction</h3>
+        <p class="pub-authors">H. Kim, Y. Kim, H. Cho, <strong>E. Shim</strong>, D. Lee, L. Kim, S. Park, J.-W. Lee</p>
+        <p class="pub-meta"><span class="venue">Korean Journal of Computational Design and Engineering 21(2)</span></p>
+      </div>
+    </li>
+  </ol>
+  <p class="sec-more">Full list on <a href="https://scholar.google.com/citations?user=Txn7APwAAAAJ">Google Scholar</a> ↗</p>
+
+  <h3 class="sub-head">Patents</h3>
+  <ul class="patents">
+    <li><span class="pat-no">US 12,608,810</span><span class="pat-title">Automatic segmentation of maxillofacial bone in CT images using deep learning</span><span class="pat-year">2026</span></li>
+    <li><span class="pat-no">US 12,579,653</span><span class="pat-title">Automated tooth segmentation of 3D scan data using tooth boundary curves</span><span class="pat-year">2026</span></li>
+    <li><span class="pat-no">US 12,387,338</span><span class="pat-title">Automated tooth segmentation of 3D scan data using deep learning</span><span class="pat-year">2025</span></li>
+    <li><span class="pat-no pending">US app. 19/397,826</span><span class="pat-title">Optimizing garment simulation parameters</span><span class="pat-year">pending</span></li>
+    <li><span class="pat-no pending">US app. 17/983,525</span><span class="pat-title">Automated tooth segmentation of three-dimensional scan data</span><span class="pat-year">pending</span></li>
+    <li><span class="pat-no pending">US app. 16/923,987</span><span class="pat-title">Shoulder disease classification via 3D deep learning</span><span class="pat-year">pending</span></li>
+  </ul>
+</section>
+
+<section id="code">
+  <header class="sec-head"><h2>Open source &amp; demos</h2></header>
+  <div class="cards">
+    <a class="card" href="https://ejshim.github.io/diffgi/">
+      <span class="card-name"><span class="owner">EJShim/</span>diffgi</span>
+      <span class="card-desc">Project page for DiffGI (ECCV 2026) — image-to-3D thin-shell generation, with an on-device WebGPU demo in the works.</span>
+      <span class="card-meta"><span class="dot" style="--c:#e34c26"></span>HTML</span>
+    </a>
+    <a class="card" href="https://github.com/EJShim/meshless-deformations-based-on-shape-matching">
+      <span class="card-name"><span class="owner">EJShim/</span>meshless-deformations</span>
+      <span class="card-desc">Implementation of Müller et al.&rsquo;s “Meshless Deformations Based on Shape Matching” (SIGGRAPH 2005) with interactive forces.</span>
+      <span class="card-meta"><span class="dot" style="--c:#f34b7d"></span>C++ <span class="stars">★ 12</span></span>
+    </a>
+    <a class="card" href="https://github.com/EJShim/embedded-deformation-python">
+      <span class="card-name"><span class="owner">EJShim/</span>embedded-deformation</span>
+      <span class="card-desc">Embedded deformation graphs (Sumner et al.) implemented three ways — Python, C++, and WASM + Svelte in the browser.</span>
+      <span class="card-meta"><span class="dot" style="--c:#3572A5"></span>Python · C++ · WASM <span class="stars">★ 10</span></span>
+    </a>
+    <a class="card" href="https://github.com/EJShim/mesh_parameterization_python">
+      <span class="card-name"><span class="owner">EJShim/</span>mesh_parameterization</span>
+      <span class="card-desc">Tutte and LSCM mesh parameterization in Python, built on libigl and VTK.</span>
+      <span class="card-meta"><span class="dot" style="--c:#3572A5"></span>Python <span class="stars">★ 4</span></span>
+    </a>
+    <a class="card" href="https://github.com/EJShim/tooth-segmentation-pointcloud">
+      <span class="card-name"><span class="owner">EJShim/</span>tooth-segmentation-pointcloud</span>
+      <span class="card-desc">Point-cloud deep learning (DGCNN) experiments for automated tooth segmentation of intraoral scans.</span>
+      <span class="card-meta"><span class="dot" style="--c:#3572A5"></span>Python <span class="stars">★ 3</span></span>
+    </a>
+    <a class="card" href="https://github.com/EJShim/GaussianSplat_pyslang">
+      <span class="card-name"><span class="owner">EJShim/</span>GaussianSplat_pyslang</span>
+      <span class="card-desc">A 3D Gaussian-splatting renderer written in the Slang shading language, driven from Python via pyslang.</span>
+      <span class="card-meta"><span class="dot" style="--c:#3572A5"></span>Python · Slang</span>
+    </a>
+  </div>
+  <p class="sec-more">Live in your browser: <a href="https://ejshim.github.io/geometric-tooth-generation/">3D tooth generation</a> · <a href="https://ejshim.github.io/geometric_deeplearning_web/">3D face generation (CoMA)</a> · <a href="https://ejshim.github.io/geometric-face-reconstruction-latent-transform/">face latent-space explorer</a></p>
+  <p class="sec-more">110 repositories on <a href="https://github.com/EJShim?tab=repositories">GitHub</a> ↗ &nbsp;·&nbsp; research demos on <a href="https://www.youtube.com/@ej_shim">YouTube</a> ↗</p>
+</section>
+
+<section id="cv">
+  <header class="sec-head"><h2>Curriculum vitae</h2></header>
+  <div class="cv-grid">
+    <div>
+      <h3 class="sub-head">Experience</h3>
+      <ul class="cv-list">
+        <li>
+          <span class="cv-date">2022.8 — now</span>
+          <div><span class="cv-role">Machine Learning Engineer</span> · CLO Virtual Fashion, Seoul
+          <p class="cv-note">Deep learning for 3D garments: generative thin-shell 3D (DiffGI), learnable simulation parameters.</p></div>
+        </li>
+        <li>
+          <span class="cv-date">2022.5 — 2022.7</span>
+          <div><span class="cv-role">AI Analyst</span> · Shinhan AI, Seoul</div>
+        </li>
+        <li>
+          <span class="cv-date">2020.6 — 2022.4</span>
+          <div><span class="cv-role">AI Team Lead</span> · Imagoworks, Seoul
+          <p class="cv-note">Deep learning for 3D dental scans — tooth segmentation &amp; crown generation, demonstrated at IDS 2021, now US patents.</p></div>
+        </li>
+        <li>
+          <span class="cv-date">2018.8 — 2020.5</span>
+          <div><span class="cv-role">Researcher</span> · Korea Institute of Science and Technology (KIST), Seoul
+          <p class="cv-note">Deep learning for medical imaging: CT segmentation, cephalometry, orthopedics.</p></div>
+        </li>
+        <li>
+          <span class="cv-date">2015.1 — 2015.5</span>
+          <div><span class="cv-role">Student Researcher</span> · VR Lab, Konkuk University, Seoul</div>
+        </li>
+        <li>
+          <span class="cv-date">2014.7 — 2014.8</span>
+          <div><span class="cv-role">Intern</span> · LG Electronics, Slough, UK</div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="sub-head">Education</h3>
+      <ul class="cv-list">
+        <li>
+          <span class="cv-date">2016.3 — 2018.7</span>
+          <div><span class="cv-role">M.S., Biomedical Engineering</span> · University of Science and Technology (UST), KIST School
+          <p class="cv-note">Medical image analysis at KIST.</p></div>
+        </li>
+        <li>
+          <span class="cv-date">2008.3 — 2016.2</span>
+          <div><span class="cv-role">B.S., Internet &amp; Multimedia Engineering</span> · Konkuk University
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="sub-head">Awards</h3>
+      <ul class="awards">
+        <li><span class="award-year">2023</span><span>Best Paper Award — Korea Computer Graphics Society</span></li>
+        <li><span class="award-year">2018</span><span>Outstanding Graduate Award — UST, KIST School</span></li>
+        <li><span class="award-year">2018</span><span>Best Presentation Award — Korean Society of Imaging Informatics in Medicine</span></li>
+        <li><span class="award-year">2017</span><span>Best Poster Award — Society for Computational Design and Engineering</span></li>
+        <li><span class="award-year">2017</span><span>Best Paper Award — Asian Conference on Design and Digital Engineering</span></li>
+        <li><span class="award-year">2016</span><span>Grand Prize (tool division), CDE Competition — Ministry of Science, ICT &amp; Future Planning</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© 2026 Eungjune Shim · Set in Schibsted Grotesk &amp; Fragment Mono · No frameworks, no build step — <a href="https://github.com/EJShim/ejshim.github.io">source</a></p>
+  <p class="foot-note">The cloth in fig. 1 is a 2D mass–spring system integrated with Verlet on your device, in a couple hundred lines of JavaScript.</p>
+</footer>
+
+<script src="cloth.js" defer></script>
+</body>
+</html>
